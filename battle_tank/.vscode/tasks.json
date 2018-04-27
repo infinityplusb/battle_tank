@@ -1,0 +1,1710 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "battle_tank Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"Mac",
+				"Debug",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"Mac",
+				"Debug",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"battle_tank Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"Mac",
+				"Debug",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"Mac",
+				"DebugGame",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"Mac",
+				"DebugGame",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"battle_tank Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"Mac",
+				"DebugGame",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"Mac",
+				"Development",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"Mac",
+				"Development",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"battle_tank Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"Mac",
+				"Development",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"Mac",
+				"Shipping",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"Mac",
+				"Shipping",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"battle_tank Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"Mac",
+				"Shipping",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"Mac",
+				"Test",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"Mac",
+				"Test",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"battle_tank Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"Mac",
+				"Test",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"IOS",
+				"Debug",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"IOS",
+				"Debug",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"battle_tank IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"IOS",
+				"Debug",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"IOS",
+				"DebugGame",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"IOS",
+				"DebugGame",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"battle_tank IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"IOS",
+				"DebugGame",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"IOS",
+				"Development",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"IOS",
+				"Development",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"battle_tank IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"IOS",
+				"Development",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"IOS",
+				"Shipping",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"IOS",
+				"Shipping",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"battle_tank IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"IOS",
+				"Shipping",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"IOS",
+				"Test",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"IOS",
+				"Test",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"battle_tank IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"IOS",
+				"Test",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank HTML5 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"HTML5",
+				"Debug",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank HTML5 Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"HTML5",
+				"Debug",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"battle_tank HTML5 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank HTML5 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"HTML5",
+				"Debug",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank HTML5 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"HTML5",
+				"DebugGame",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank HTML5 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"HTML5",
+				"DebugGame",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"battle_tank HTML5 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank HTML5 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"HTML5",
+				"DebugGame",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank HTML5 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"HTML5",
+				"Development",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank HTML5 Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"HTML5",
+				"Development",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"battle_tank HTML5 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank HTML5 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"HTML5",
+				"Development",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank HTML5 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"HTML5",
+				"Shipping",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank HTML5 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"HTML5",
+				"Shipping",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"battle_tank HTML5 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank HTML5 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"HTML5",
+				"Shipping",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank HTML5 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"HTML5",
+				"Test",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank HTML5 Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"HTML5",
+				"Test",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"battle_tank HTML5 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank HTML5 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"HTML5",
+				"Test",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"Linux",
+				"Debug",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"Linux",
+				"Debug",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"battle_tank Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"Linux",
+				"Debug",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"Linux",
+				"DebugGame",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"Linux",
+				"DebugGame",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"battle_tank Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"Linux",
+				"DebugGame",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"Linux",
+				"Development",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"Linux",
+				"Development",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"battle_tank Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"Linux",
+				"Development",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank Linux Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"Linux",
+				"Shipping",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank Linux Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"Linux",
+				"Shipping",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"battle_tank Linux Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank Linux Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"Linux",
+				"Shipping",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank Linux Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"Linux",
+				"Test",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank Linux Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"Linux",
+				"Test",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"battle_tank Linux Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank Linux Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"Linux",
+				"Test",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank TVOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"TVOS",
+				"Debug",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank TVOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"TVOS",
+				"Debug",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"battle_tank TVOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank TVOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"TVOS",
+				"Debug",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank TVOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"TVOS",
+				"DebugGame",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank TVOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"TVOS",
+				"DebugGame",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"battle_tank TVOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank TVOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"TVOS",
+				"DebugGame",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank TVOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"TVOS",
+				"Development",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank TVOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"TVOS",
+				"Development",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"battle_tank TVOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank TVOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"TVOS",
+				"Development",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank TVOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"TVOS",
+				"Shipping",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank TVOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"TVOS",
+				"Shipping",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"battle_tank TVOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank TVOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"TVOS",
+				"Shipping",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank TVOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"TVOS",
+				"Test",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank TVOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"TVOS",
+				"Test",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"battle_tank TVOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tank TVOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tank",
+				"TVOS",
+				"Test",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tankEditor Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tankEditor",
+				"Linux",
+				"Debug",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tankEditor Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tankEditor",
+				"Linux",
+				"Debug",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"battle_tankEditor Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tankEditor Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tankEditor",
+				"Linux",
+				"Debug",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tankEditor Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tankEditor",
+				"Linux",
+				"DebugGame",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tankEditor Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tankEditor",
+				"Linux",
+				"DebugGame",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"battle_tankEditor Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tankEditor Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tankEditor",
+				"Linux",
+				"DebugGame",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tankEditor Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tankEditor",
+				"Linux",
+				"Development",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tankEditor Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tankEditor",
+				"Linux",
+				"Development",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"battle_tankEditor Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tankEditor Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tankEditor",
+				"Linux",
+				"Development",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tankEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tankEditor",
+				"Mac",
+				"Debug",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tankEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tankEditor",
+				"Mac",
+				"Debug",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"battle_tankEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tankEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tankEditor",
+				"Mac",
+				"Debug",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tankEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tankEditor",
+				"Mac",
+				"DebugGame",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tankEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tankEditor",
+				"Mac",
+				"DebugGame",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"battle_tankEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tankEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tankEditor",
+				"Mac",
+				"DebugGame",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tankEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tankEditor",
+				"Mac",
+				"Development",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tankEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tankEditor",
+				"Mac",
+				"Development",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"battle_tankEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "battle_tankEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"battle_tankEditor",
+				"Mac",
+				"Development",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/battle_tank.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{
+	"files.exclude": {
+		"/home/brian/Documents/Programming/games/battle_tank/battle_tank/.vscode": true,
+		"/home/brian/Documents/Programming/games/battle_tank/battle_tank/Content": true,
+		"/home/brian/Documents/Programming/games/battle_tank/battle_tank/Intermediate": true
+	}
+}

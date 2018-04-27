@@ -26,3 +26,13 @@
 *.exe
 *.out
 *.app
+
+
+/battle_tank/Intermediate/*
+/battle_tank/DerivedDataCache/*
+/battle_tank/Saved/*
+/battle_tank/Binaries/*
+/battle_tank/Build/*
+!/battle_tank/Build/**/*.ico
+/battle_tank/SourceArt/**/*.png
+/battle_tank/SourceArt/**/*.tga

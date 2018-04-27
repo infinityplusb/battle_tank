@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "/home/brian/Programs/UnrealEngine"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off"
+	}
+}
