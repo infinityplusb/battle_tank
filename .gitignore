@@ -36,3 +36,7 @@
 !/battle_tank/Build/**/*.ico
 /battle_tank/SourceArt/**/*.png
 /battle_tank/SourceArt/**/*.tga
+/battle_tank/Content/StarterContent/*
+!/battle_tank/Content/StarterContent/Materials
+!/battle_tank/Content/StarterContent/Materials/*
+
