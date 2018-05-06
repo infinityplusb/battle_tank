@@ -4143,6 +4143,7 @@
     <Include Path="/usr/include" />
     <Include Path="/home/brian/Programs/UnrealEngine/Engine/Source" />
     <Include Path="/home/brian/Documents/Programming/games/battle_tank/battle_tank/Source" />
+    <Include Path="/home/brian/Documents/Programming/games/battle_tank/battle_tank/Source/battle_tank/Public" />
     <Include Path="/home/brian/Documents/Programming/games/battle_tank/battle_tank/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/battle_tank" />
     <Include Path="/home/brian/Documents/Programming/games/battle_tank/battle_tank/Source/battle_tank" />
     <Include Path="/home/brian/Programs/UnrealEngine/Engine/Source/Runtime/Core/Public" />

@@ -5,6 +5,8 @@
 			"includePath": [
 				"/home/brian/Programs/UnrealEngine/Engine/Source",
 				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/Source",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/Source/battle_tank/Public",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/battle_tank",
 				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/Source/battle_tank",
 				"/home/brian/Programs/UnrealEngine/Engine/Source/Runtime/Core/Public",
 				"/home/brian/Programs/UnrealEngine/Engine/Source/Runtime/Core/Public/Internationalization",

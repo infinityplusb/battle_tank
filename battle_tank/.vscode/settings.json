@@ -1,7 +1,11 @@
 {
 	"files.exclude": {
+		"/home/brian/Documents/Programming/games/battle_tank/battle_tank/.idea": true,
+		"/home/brian/Documents/Programming/games/battle_tank/battle_tank/.kdev4": true,
 		"/home/brian/Documents/Programming/games/battle_tank/battle_tank/.vscode": true,
 		"/home/brian/Documents/Programming/games/battle_tank/battle_tank/Content": true,
-		"/home/brian/Documents/Programming/games/battle_tank/battle_tank/Intermediate": true
+		"/home/brian/Documents/Programming/games/battle_tank/battle_tank/DerivedDataCache": true,
+		"/home/brian/Documents/Programming/games/battle_tank/battle_tank/Intermediate": true,
+		"/home/brian/Documents/Programming/games/battle_tank/battle_tank/Saved": true
 	}
 }
