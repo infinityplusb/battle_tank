@@ -15,9 +15,11 @@ class BATTLE_TANK_API ATankAIController : public AAIController
 {
 	GENERATED_BODY()
 	
-public:
-	ATank* GetControlledTank() const;
-	
+// public: this was public ... 
+private:
 	virtual void BeginPlay() override ; // the virtual here is redundant
 	
+	ATank* GetControlledTank() const;
+	
+	ATank* GetPlayerTank() const;
 };
