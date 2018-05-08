@@ -43,15 +43,26 @@ void ATankPlayerController::AimTowardsCrosshair()
     FVector OutHitLocation; // Out parameter
     if( GetSightRayHitLocation(OutHitLocation) ) // Has "side-effect", is going to line trace
     {
-        UE_LOG(LogTemp, Warning, TEXT("Hitting Location: %s"), *OutHitLocation.ToString());
+        // UE_LOG(LogTemp, Warning, TEXT("Hitting Location: %s"), *OutHitLocation.ToString());
     }
 }
 
 // return OutHitLocation
 bool ATankPlayerController::GetSightRayHitLocation(FVector& OutHitLocation) const
 {
-    OutHitLocation = FVector(1.0);
+    // find the crosshair position
+    int32 ViewportSizeX, ViewportSizeY ;
+    GetViewportSize(ViewportSizeX, ViewportSizeY); 
+
+    auto ScreenLocation = FVector2D(ViewportSizeX * CrossHairXLocation, ViewportSizeY * CrossHairYLocation);
+    // UE_LOG(LogTemp, Warning, TEXT("Screen Location: %s"), *(ScreenLocation.ToString()));
+
+    // De- project the screen position of the crosshair to the world direction
+    // Line Trace along that look direction and see what we hit (up to a max range)
+    // OutHitLocation = FVector(1.0);
     return true;
+
+
     //const FVector Start = GetFocalLocation();
 
     //const FVector End 
