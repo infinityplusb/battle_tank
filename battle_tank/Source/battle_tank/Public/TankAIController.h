@@ -14,7 +14,10 @@ UCLASS()
 class BATTLE_TANK_API ATankAIController : public AAIController
 {
 	GENERATED_BODY()
-	
+public:	
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+
 // public: this was public ... 
 private:
 	virtual void BeginPlay() override ; // the virtual here is redundant
