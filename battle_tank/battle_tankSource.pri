@@ -7491,6 +7491,7 @@ SOURCES += \
 	"$$battle_tankRootPath/Source/battle_tank/battle_tankGameModeBase.cpp" \
 	"$$battle_tankRootPath/Source/battle_tank/Private/Tank.cpp" \
 	"$$battle_tankRootPath/Source/battle_tank/Private/TankAIController.cpp" \
+	"$$battle_tankRootPath/Source/battle_tank/Private/TankAimingComponent.cpp" \
 	"$$battle_tankRootPath/Source/battle_tank/Private/TankPlayerController.cpp" \
  
 
