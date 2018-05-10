@@ -35,5 +35,5 @@ public:
 
 private:
 	UPROPERTY(EditAnywhere, Category = Firing)
-	float LaunchSpeed = 100000; // Sensible strting value of 1000m/s 
+	float LaunchSpeed = 100000; // Sensible starting value of 1000m/s 
 };
