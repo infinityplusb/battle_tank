@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Components/StaticMeshComponent.h"
+#include "Tank.h"
 #include "TankBarrel.generated.h"
 
 
