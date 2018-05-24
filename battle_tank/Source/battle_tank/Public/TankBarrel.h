@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Components/StaticMeshComponent.h"
-#include "Tank.h"
+#include "TankAimingComponent.h"
 #include "TankBarrel.generated.h"
 
 
@@ -14,5 +14,6 @@ public:
     void Elevate(float DegressPerSecond);
 
 private:
-
+    UPROPERTY(EditAnywhere)
+    float MaxDegreesPerSecond = 20 ; // Sensible default
 };
