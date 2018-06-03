@@ -1,5 +1,5 @@
-#include "battle_tank.h"
 #include "TankBarrel.h"
+#include "battle_tank.h"
 
 void UTankBarrel::Elevate(float RelativeSpeed)
 {

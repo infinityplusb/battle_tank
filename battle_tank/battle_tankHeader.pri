@@ -9680,6 +9680,8 @@ HEADERS += \
 	"$$battle_tankRootPath/Source/battle_tank/Public/Tank.h" \
 	"$$battle_tankRootPath/Source/battle_tank/Public/TankAIController.h" \
 	"$$battle_tankRootPath/Source/battle_tank/Public/TankAimingComponent.h" \
+	"$$battle_tankRootPath/Source/battle_tank/Public/TankBarrel.h" \
 	"$$battle_tankRootPath/Source/battle_tank/Public/TankPlayerController.h" \
+	"$$battle_tankRootPath/Source/battle_tank/Public/TankTurret.h" \
  
 
