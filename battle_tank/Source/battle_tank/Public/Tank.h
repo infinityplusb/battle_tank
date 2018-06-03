@@ -41,7 +41,7 @@ public:
 
 private:
 	UPROPERTY(EditAnywhere, Category = Firing)
-	float LaunchSpeed = 1000000; // Sensible starting value of 10000m/s - lol 
+	float LaunchSpeed = 4000.0; // Sensible starting value of 10000m/s - lol 
 
 	UPROPERTY(EditAnywhere, Category = Setup)
 	TSubclassOf<class AProjectile> ProjectileBluePrint ;  
