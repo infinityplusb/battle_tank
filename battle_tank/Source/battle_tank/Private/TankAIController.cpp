@@ -20,6 +20,10 @@ void ATankAIController::Tick(float DeltaTime)
         //UE_LOG(LogTemp, Warning, TEXT("Aiming at: %s"), *(GetPlayerTank()->GetActorLocation()).ToString());
         
         // Move towards the player
+        MoveToActor(
+            PlayerTank , 
+            AcceptanceRadius  // 30m
+        );
         // Aim at the player
 
         ControlledTank->AimAt(PlayerTank->GetActorLocation());

@@ -19,9 +19,13 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+
+
 // public: this was public ... 
 private:
 	virtual void BeginPlay() override ; // the virtual here is redundant
 	
+	// How close can the AI tank get to the player
+	float AcceptanceRadius = 3000 ;
 
 };
