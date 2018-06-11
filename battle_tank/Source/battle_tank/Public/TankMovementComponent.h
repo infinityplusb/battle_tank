@@ -23,6 +23,12 @@ public:
 	UFUNCTION(BlueprintCallable, Category = Input)
 	void IntendMoveForward(float Throw) ;
 	
+	// Throw is how far back the controller is moved
+	UFUNCTION(BlueprintCallable, Category = Input)
+	void IntendTurnRight(float Throw) ;
+	
+
+
 private:
 	UTankTrack* LeftTrack = nullptr ; 	
 	UTankTrack* RightTrack = nullptr ;
