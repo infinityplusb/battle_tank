@@ -23,7 +23,5 @@ public:
 private:
 	virtual void BeginPlay() override ; // the virtual here is redundant
 	
-	ATank* GetControlledTank() const;
-	
-	ATank* GetPlayerTank() const;
+
 };
