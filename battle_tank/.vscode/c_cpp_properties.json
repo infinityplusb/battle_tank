@@ -1,6 +1,21 @@
 {
+	"version": 1,
 	"configurations": [
 		{
+
+			"name": "battle_tank", 
+			"includePath": [
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/Source/battle_tank",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/Source/battle_tank/Private",
+				"/home/brian/Documents/Programming/games/battle_tank/battle_tank/Source/battle_tank/Public"
+			],
+			"intelliSenseMode": "clang-x64",
+			"defines": [
+				"_DEBUG",
+				"UNICODE"
+			]
+		},
+			{
 			"name": "UnrealEngine",
 			"includePath": [
 				"/home/brian/Programs/UnrealEngine/Engine/Source",
