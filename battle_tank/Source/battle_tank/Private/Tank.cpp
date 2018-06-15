@@ -34,7 +34,7 @@ void ATank::SetTurretReference(UTankTurret* TurretToSet)
 void ATank::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	TankAimingComponent = FindComponentByClass<UTankAimingComponent>() ;
 }
 
 // Called to bind functionality to input
