@@ -14,35 +14,15 @@ ATank::ATank()
 	PrimaryActorTick.bCanEverTick = false;
 }
 
-// Called when the game starts or when spawned
-void ATank::BeginPlay()
-{
-	Super::BeginPlay();
-}
+// // Called when the game starts or when spawned
+// void ATank::BeginPlay()
+// {
+// 	Super::BeginPlay();
+// }
 
-// Called to bind functionality to input
-void ATank::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
-{
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
+// // Called to bind functionality to input
+// void ATank::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+// {
+// 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
-}
-
-void ATank::Fire()
-{
-	if(!ensure(Barrel)) {return; }
-	bool isReloaded = ( FPlatformTime::Seconds() - LastFireTime ) > ReloadTimeInSeconds ; 
-	if(isReloaded)
-	{	
-		// Spawn a projectile at the socket location 
-		auto Projectile = GetWorld()->SpawnActor<AProjectile>(
-			ProjectileBluePrint, 
-			Barrel->GetSocketLocation(FName("Projectile")), 
-			Barrel->GetSocketRotation(FName("Projectile"))
-		) ;
-
-		Projectile->LaunchProjectile(LaunchSpeed);
-		LastFireTime = FPlatformTime::Seconds() ; 
-	}
-
-
-}
+// }
