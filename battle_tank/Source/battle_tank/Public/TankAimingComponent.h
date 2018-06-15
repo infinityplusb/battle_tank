@@ -24,12 +24,13 @@ class BATTLE_TANK_API UTankAimingComponent : public UActorComponent
 	GENERATED_BODY()
 
 public:	
-	// Sets default values for this component's properties
-	UTankAimingComponent();
+	UFUNCTION(BlueprintCallable, Category = Setup)
+	void Initialise(UTankBarrel* BarrelToSet, UTankTurret* TurretToSet) ;
 
-	void SetBarrelReference(UTankBarrel* BarrelToSet);
-	void SetTurretReference(UTankTurret* TurretToSet);
-	void AimAt(FVector HitLocation, float LaunchSpeed) ;
+//	void SetBarrelReference(UTankBarrel* BarrelToSet);
+//	void SetTurretReference(UTankTurret* TurretToSet);
+
+	void AimAt(FVector HitLocation) ;
 	
 protected:
 	// Create an enum of type EFiring State, called Firing State and initialise it to Reloading
@@ -37,8 +38,14 @@ protected:
 	EFiringState FiringState = EFiringState::Reloading ;
 
 private:
+	// Sets default values for this component's properties
+	UTankAimingComponent();
+
 	UTankBarrel* Barrel = nullptr;
 	UTankTurret* Turret = nullptr;
+
+	UPROPERTY(EditAnywhere, Category = Firing)
+	float LaunchSpeed = 4000.0; // Sensible starting value of 10000m/s - lol 
 
 	void MoveBarrelTowards(FVector AimDirection);
 };

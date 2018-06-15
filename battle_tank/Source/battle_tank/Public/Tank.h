@@ -7,7 +7,6 @@
 #include "Tank.generated.h"
 
 class UTankBarrel ;
-class UTankAimingComponent ;
 class UTankMovementComponent ;
 class AProjectile ;
 
@@ -19,13 +18,13 @@ class BATTLE_TANK_API ATank : public APawn
 public:
 	// Sets default values for this pawn's properties
 	ATank();
-	void AimAt (FVector HitLocation);
+//	void AimAt (FVector HitLocation);
 
-	UFUNCTION(BlueprintCallable, Category = Setup)
-	void SetBarrelReference(UTankBarrel* BarrelToSet);
+//	UFUNCTION(BlueprintCallable, Category = Setup)
+//	void SetBarrelReference(UTankBarrel* BarrelToSet);
 
-	UFUNCTION(BlueprintCallable, Category = Setup)
-	void SetTurretReference(UTankTurret* TurretToSet);
+//	UFUNCTION(BlueprintCallable, Category = Setup)
+//	void SetTurretReference(UTankTurret* TurretToSet);
 
 	UFUNCTION(BlueprintCallable)
 	void Fire() ;
@@ -35,9 +34,6 @@ protected:
 	virtual void BeginPlay() override;
 
 	UPROPERTY(BlueprintReadOnly)
-	UTankAimingComponent* TankAimingComponent = nullptr;
-
-	UPROPERTY(BlueprintReadOnly)
 	UTankMovementComponent* TankMovementComponent = nullptr;
 
 public:	
@@ -45,11 +41,12 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 private:
-	UPROPERTY(EditAnywhere, Category = Firing)
-	float LaunchSpeed = 4000.0; // Sensible starting value of 10000m/s - lol 
-
 	UPROPERTY(EditDefaultsOnly, Category = Firing)
 	float ReloadTimeInSeconds = 3 ;
+
+	// TODO remove once firing is moved to aiming component
+	UPROPERTY(EditDefaultsOnly, Category = "Firing")
+	float LaunchSpeed = 4000;
 
 	UPROPERTY(EditAnywhere, Category = Setup)
 	TSubclassOf<class AProjectile> ProjectileBluePrint ;  

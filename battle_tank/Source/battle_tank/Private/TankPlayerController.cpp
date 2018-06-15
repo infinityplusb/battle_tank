@@ -2,48 +2,33 @@
 
 #include "TankPlayerController.h"
 #include "TankAimingComponent.h"
-#include "Tank.h"
 
 void ATankPlayerController::BeginPlay()
 {
     Super::BeginPlay();
-    auto AimingComponent = GetControlledTank()->FindComponentByClass<UTankAimingComponent>();
+    auto AimingComponent = GetPawn()->FindComponentByClass<UTankAimingComponent>();
     if(ensure(AimingComponent))
     {
         FoundAimingComponent(AimingComponent);
     }
-    else
-    {
-        UE_LOG(LogTemp, Warning, TEXT("PlayerController can't find aiming component at Begin Play"));
-    }
-    //UE_LOG(LogTemp, Warning, TEXT("PlayerController Begin Play"));
 }
 
-// Tick
-// Called every frame
+// Tick Called every frame
 void ATankPlayerController::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
     AimTowardsCrosshair();    
-//    UE_LOG(LogTemp, Warning, TEXT("PlayerController tick!"));
-
-}
-
-
-ATank* ATankPlayerController::GetControlledTank() const
-{
-    return Cast<ATank>(GetPawn());
 }
 
 void ATankPlayerController::AimTowardsCrosshair() 
 {
-    if (!ensure(GetControlledTank())) { return; }
+    auto AimingComponent = GetPawn()->FindComponentByClass<UTankAimingComponent>();
+    if(!ensure(AimingComponent)) { return ; }
 
     FVector OutHitLocation; // Out parameter
     if( GetSightRayHitLocation(OutHitLocation) ) // Has "side-effect", is going to line trace
     {
-        GetControlledTank()->AimAt(OutHitLocation);
-        // UE_LOG(LogTemp, Warning, TEXT("Hitting Location: %s"), *OutHitLocation.ToString());
+        AimingComponent->AimAt(OutHitLocation);
     }
 }
 

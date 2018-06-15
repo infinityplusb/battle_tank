@@ -15,17 +15,17 @@ UTankAimingComponent::UTankAimingComponent()
 	// ...
 }
 
-void UTankAimingComponent::SetBarrelReference(UTankBarrel* BarrelToSet)
+void UTankAimingComponent::Initialise(UTankBarrel* BarrelToSet, UTankTurret* TurretToSet)
 {
 	Barrel = BarrelToSet;
-}
-
-void UTankAimingComponent::SetTurretReference(UTankTurret* TurretToSet)
-{
 	Turret = TurretToSet;
 }
 
-void UTankAimingComponent::AimAt(FVector HitLocation, float LaunchSpeed)
+
+// void UTankAimingComponent::SetBarrelReference(UTankBarrel* BarrelToSet) { Barrel = BarrelToSet; }
+// void UTankAimingComponent::SetTurretReference(UTankTurret* TurretToSet) { Turret = TurretToSet; }
+
+void UTankAimingComponent::AimAt(FVector HitLocation)
 {
 	if (!ensure(Barrel)) { return; }
 
@@ -44,21 +44,12 @@ void UTankAimingComponent::AimAt(FVector HitLocation, float LaunchSpeed)
 		0,
 		ESuggestProjVelocityTraceOption::DoNotTrace
 	);
-	if (ensure(bHaveAimSolution))
+	if (bHaveAimSolution)
 	{
 		auto AimDirection = OutLaunchVelocity.GetSafeNormal();
-		auto TankName = GetOwner()->GetName();
-		
-		auto Time = GetWorld()->GetTimeSeconds();
-    	// UE_LOG(LogTemp, Warning, TEXT("%f: Aim Solution found"), Time);
-		
 		MoveBarrelTowards(AimDirection);
 	}
-	else 
-	{
-		// auto Time = GetWorld()->GetTimeSeconds();
-    	// UE_LOG(LogTemp, Warning, TEXT("%f: No aim solve found"), Time);
-	}
+
 }
 
 void UTankAimingComponent::MoveBarrelTowards(FVector AimDirection)
