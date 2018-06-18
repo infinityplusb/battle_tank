@@ -33,6 +33,8 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void Fire() ;
 
+	EFiringState GetFiringState() const ;
+
 protected:
 	// Create an enum of type EFiring State, called Firing State and initialise it to Reloading
 	UPROPERTY(BlueprintReadOnly, Category = State)
